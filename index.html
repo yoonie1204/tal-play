@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>북청사자탈놀이main</title>
+<style>
+
+html,body { margin: 0; padding: 0; height: 100%; position:relative;
+    background-color: #101010;  }
+
+.header{ width: 100%; height: 5%;
+	background:#101010;}
+.header audio{display:inline; margin-left: 1%; margin-top: 2%;}
+.nav{width: 5%; height: 80%; float: left;
+	background: #101010;}
+.section{width: 90%; height: 80%; float: left;
+background-color: #101010; }
+
+
+
+.img-hover-text{
+  width: 50%;
+  margin: auto;
+  position: relative;
+}
+
+
+
+.img-hover-text figcaption{
+  position: absolute;
+  width: 35%;
+  background: rgba(255,255,255,.7);
+  margin-top: 60%;
+margin-left: 95%;
+  padding: 5px;
+  border-sizing:border-box;
+  border-radius: 25px;
+  opacity: 0;
+  transition: .5s;
+  font-size: 15px;
+
+text-align: center;
+}
+
+.img-hover-text:hover figcaption{
+  opacity: 1;
+
+}
+
+
+.title{position: absolute; display:inline-block; margin-top: 13%; margin-left: 5%;width:30%;}
+.mainimg1{position: absolute;display:inline-block; margin-left: 40%; margin-top: 4%;width:105%;}
+
+.aside{width: 5%; height: 80%; float: left;
+	background:#101010;
+}
+
+  .footer {position:relative; overflow: hidden;
+width: 100%; height: 15%; clear: both;
+}
+
+ ul{
+position:absolute;
+z-index:2; left:0; right:0;  margin-left:auto; margin-right:auto;
+list-style-type: none;margin-top: 4.5%;
+text-align: center;
+}
+
+li{
+font-family: "Jeju Gothic", "Times New Roman", sans-serif;
+display: inline;  font-size: 22px;  margin-left:50px;
+display: inline-block;
+}
+
+li:nth-child(1) {
+margin:0;
+}
+
+a{text-decoration:none;}
+a:link{color:white;}
+a:visited{color:white;}
+a:hover { color: #ffb100; }
+
+
+li:hover{
+   cursor:pointer;
+  -webkit-transform:scale(1.1);
+  -webkit-transition: transform .10s;}
+
+ .footer img{position:absolute; width: 80%; height:95%;
+ left:10%;top:5%;}
+</style>
+
+<script>
+
+</script>
+</head>
+
+<body>
+
+  <header class="header">
+
+     <audio autoplay controls> <source src="사자춤탈춤 북청사자놀음.mp3" type="audio/mp3"> 브라우저가 audio 태그를 지원하지 않습니다</audio>
+  </header>
+  	<nav class="nav"></nav>
+
+  	<section class="section">
+<img src="title.png" class="title" width="30%" >
+
+<figure class="img-hover-text">
+      <img src="main img1.gif" class="mainimg1"  width="80%" >
+      <figcaption>
+        <p >북청사자 탈놀이 -국가무형문화재 제15호</p>
+      </figcaption>
+</figure>
+
+      </section>
+  	<aside class="aside"></aside>
+
+    <footer class="footer">
+      <ul>
+     <li > <a href="index.html">메인</a>
+      <li> <a href="2.html">스토리</a>
+      <li> <a href="3.html">사용되는 탈</a>
+      <li> <a href="4.html">탈 만들기</a>
+      <li> <a href="5.html">춤동작</a>
+    </ul>
+  <img src="bottombar.png">
+    </footer>
+
+
+
+</body>
+</html>

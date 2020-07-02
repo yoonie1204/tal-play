@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>북청사자탈놀이main</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+        <style type="text/css">
+
+html,body { margin: 0; padding: 0; height: 100%; position:relative;
+    background-color: #FFFFFF;  }
+
+
+.nav{width: 10%; height: 80%; float: left;
+	background: #FFFFFF;}
+.section{width: 80%; height: 85%; float: left;
+background-color: #FFFFFF; }
+
+.img1{width:18%; height: 100%; float:left; margin-left: 30px;}
+.mini1 img{width:35%;position: relative;}
+.mini1{margin-top:-150%; padding-left:70%;}
+
+
+
+.img2{width:18%; height: 100%; float:left; margin-left: 30px;}
+.mini2 img{width:35%;position: relative;}
+.mini2{margin-top:-150%; padding-left:70%;}
+
+.img3{width:18%; height: 100%;float:left;margin-left: 30px;}
+.mini3 img{width:35%;position: relative;}
+.mini3{margin-top:-150%; padding-left:70%;}
+
+.img4{width:18%; height: 100%; float:left;margin-left: 30px;}
+.mini4 img{width:35%;position: relative;}
+.mini4{margin-top:-150%; padding-left:70%;}
+
+.img5{width:18%; height: 100%; float:left;margin-left:30px;}
+.mini5 img{width:35%;position: relative;}
+.mini5{margin-top:-150%; padding-left:70%;}
+
+.aside{width: 10%; height: 80%; float: left;
+	background:#FFFFFF;
+}
+
+  .footer {position:relative; overflow: hidden;
+width: 100%; height: 15%; clear: both;
+}
+
+ul{
+position:absolute;
+z-index:2; left:0; right:0;  margin-left:auto; margin-right:auto;
+list-style-type: none;margin-top: 4.5%;
+text-align: center;
+}
+
+li{
+font-family: "Jeju Gothic", "Times New Roman", sans-serif;
+display: inline;  font-size: 22px;  margin-left:50px;
+display: inline-block;
+
+}
+
+li:nth-child(1) {
+margin:0;
+}
+
+a{text-decoration:none;}
+a:link{color:white;}
+a:visited{color:white;}
+a:hover { color: #ffb100; }
+
+
+li:hover{
+ cursor:pointer;
+-webkit-transform:scale(1.1);
+-webkit-transition: transform .10s;
+}
+
+.footer img{position:absolute; width: 80%; height:95%;
+left:10%;top:5%;}
+
+
+.popup_panel { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 100;}
+.popup_panel div.popup_bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:#000; opacity:.5; filter:alpha(opacity=50); }
+.popup_panel div.popup_contents { position: absolute; top: 50%; left: 50%; width: 570px; height: 330px; border:1px solid #666464; background-color:#fff; border-radius: 20px;}
+
+.popup_panel2 { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 100;}
+.popup_panel2 div.popup_bg2 { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:#000; opacity:.5; filter:alpha(opacity=50); }
+.popup_panel2 div.popup_contents2 { position: absolute; top: 50%; left: 50%; width: 570px; height: 330px; border:1px solid #666464; background-color:#fff; border-radius: 20px;}
+
+.popup_panel3 { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 100;}
+.popup_panel3 div.popup_bg3 { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:#000; opacity:.5; filter:alpha(opacity=50); }
+.popup_panel3 div.popup_contents3 { position: absolute; top: 50%; left: 50%; width: 570px; height: 330px; border:1px solid #666464; background-color:#fff; border-radius: 20px;}
+
+.popup_panel4 { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 100;}
+.popup_panel4 div.popup_bg4 { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:#000; opacity:.5; filter:alpha(opacity=50); }
+.popup_panel4 div.popup_contents4 { position: absolute; top: 50%; left: 50%; width: 570px; height: 330px; border:1px solid #666464; background-color:#fff; border-radius: 20px;}
+
+.popup_panel5 { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 100;}
+.popup_panel5 div.popup_bg5{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:#000; opacity:.5; filter:alpha(opacity=50); }
+.popup_panel5 div.popup_contents5 { position: absolute; top: 50%; left: 50%; width: 570px; height: 330px; border:1px solid #666464; background-color:#fff; border-radius: 20px;}
+
+</style>
+
+
+</head>
+
+<body>
+
+  <header class="header">
+  </header>
+  	<nav class="nav"></nav>
+
+
+  	<section class="section">
+
+      <div class="img1">
+        <img src="2P_01.jpg">
+          <a href="javascript:void(0)" id="btn_popup_open">
+            <img src="2p open1.png" style="width:30px; z-index:1;position:absolute;margin-left:-60px;margin-top:350px;"></a>
+    </div>
+
+<div class="popup_panel">
+
+    <div class="popup_bg"></div>
+
+       <div class="popup_contents">
+        <a href="javascript:void(0)" id="btn_popup_close"><img src="3p pop.png" style="width:620px;height:390px;
+        margin-left:-25px;margin-top:-30px; position:absolute;">
+        <img src="3p CLOSE.png" style="width:30px;position:relative; z-index:3; margin-top:15px; margin-left:520px;"></a>
+        </div>
+
+</div>
+    <script type="text/javascript">
+            $(document).ready(function() {
+
+                var $panel = $(".popup_panel");
+                var $panelContents = $panel.find(".popup_contents");
+                $("#btn_popup_open").on("click", function(e) {
+
+                    if ($panelContents.outerWidth() < $(document).width()) {
+                        $panelContents.css("margin-left", "-" + $panelContents.outerWidth() / 2 + "px");
+                    } else {
+                        $panelContents.css("left", "0px");
+                    }
+
+                    if ($panelContents.outerHeight() < $(document).height()) {
+                        $panelContents.css("margin-top", "-" + $panelContents.outerHeight() / 2 + "px");
+                    } else {
+                        $panelContents.css("top", "0px");
+                    }
+                    $panel.fadeIn();
+                });
+
+                $("#btn_popup_close").on("click", popupClose);
+
+                $panel.find(".popup_bg").on("click", popupClose);
+                function popupClose(e) {
+                    $panel.fadeOut();
+                    e.preventDefault();
+                }
+            });
+        </script>
+  <div class="pop" style="display: none; background-color: white; width: 570px; height: 350px;">
+  <img src="3p pop.png"> </div>
+
+
+
+
+      <div class="img2">
+        <img src="2P_02.jpg">
+          <a href="javascript:void(0)" id="btn_popup_open2"><img src="2p open2.png" style="width:30px; z-index:1;position:absolute;margin-left:-60px;margin-top:350px;"></a>
+        </div>
+
+    <div class="popup_panel2">
+        <div class="popup_bg2"></div>
+           <div class="popup_contents2">
+            <a href="javascript:void(0)" id="btn_popup_close2"><img src="3p pop2.png" style="width:620px;height:390px;
+            margin-left:-25px;margin-top:-30px; position:absolute;">
+            <img src="3p CLOSE2.png" style="width:30px;position:relative; z-index:4; margin-top:15px; margin-left:520px;"></a>
+            </div>
+    </div>
+        <script type="text/javascript">
+                $(document).ready(function() {
+
+                    var $panel = $(".popup_panel2");
+                    var $panelContents = $panel.find(".popup_contents2");
+                    $("#btn_popup_open2").on("click", function(e) {
+
+                        if ($panelContents.outerWidth() < $(document).width()) {
+                            $panelContents.css("margin-left", "-" + $panelContents.outerWidth() / 2 + "px");
+                        } else {
+                            $panelContents.css("left", "0px");
+                        }
+
+                        if ($panelContents.outerHeight() < $(document).height()) {
+                            $panelContents.css("margin-top", "-" + $panelContents.outerHeight() / 2 + "px");
+                        } else {
+                            $panelContents.css("top", "0px");
+                        }
+                        $panel.fadeIn();
+                    });
+
+                    $("#btn_popup_close2").on("click", popupClose2);
+
+                    $panel.find(".popup_bg2").on("click", popupClose2);
+                    function popupClose2(e) {
+                        $panel.fadeOut();
+                        e.preventDefault();
+                    }
+                });
+            </script>
+      <div class="pop2" style="display: none; background-color: white; width: 570px; height: 350px;">
+      <img src="3p pop2.png"> </div>
+
+
+      <div class="img3">
+        <img src="2P_03.jpg">
+          <a href="javascript:void(0)" id="btn_popup_open3"><img src="2p open3.png" style="width:30px; z-index:1;position:absolute;margin-left:-60px;margin-top:350px;"></a>
+      </div>
+
+      <div class="popup_panel3">
+          <div class="popup_bg3"></div>
+             <div class="popup_contents3">
+              <a href="javascript:void(0)" id="btn_popup_close3"><img src="3p pop3.png" style="width:620px;height:390px;
+              margin-left:-25px;margin-top:-30px; position:absolute;">
+              <img src="3p CLOSE3.png" style="width:30px;position:relative; z-index:4; margin-top:15px; margin-left:520px;"></a>
+              </div>
+      </div>
+          <script type="text/javascript">
+                  $(document).ready(function() {
+
+                      var $panel = $(".popup_panel3");
+                      var $panelContents = $panel.find(".popup_contents3");
+                      $("#btn_popup_open3").on("click", function(e) {
+
+                          if ($panelContents.outerWidth() < $(document).width()) {
+                              $panelContents.css("margin-left", "-" + $panelContents.outerWidth() / 2 + "px");
+                          } else {
+                              $panelContents.css("left", "0px");
+                          }
+
+                          if ($panelContents.outerHeight() < $(document).height()) {
+                              $panelContents.css("margin-top", "-" + $panelContents.outerHeight() / 2 + "px");
+                          } else {
+                              $panelContents.css("top", "0px");
+                          }
+                          $panel.fadeIn();
+                      });
+
+                      $("#btn_popup_close3").on("click", popupClose3);
+
+                      $panel.find(".popup_bg3").on("click", popupClose3);
+                      function popupClose3(e) {
+                          $panel.fadeOut();
+                          e.preventDefault();
+                      }
+                  });
+              </script>
+        <div class="pop3" style="display: none; background-color: white; width: 570px; height: 350px;">
+        <img src="3p pop3.png"> </div>
+
+
+      <div class="img4">
+        <img src="2P_04.jpg">
+      <a href="javascript:void(0)" id="btn_popup_open4"><img src="2p open4.png" style="width:30px; z-index:1;position:absolute;margin-left:-60px;margin-top:350px;"></a>
+      </div>
+
+      <div class="popup_panel4">
+          <div class="popup_bg4"></div>
+             <div class="popup_contents4">
+              <a href="javascript:void(0)" id="btn_popup_close4"><img src="3p pop4.png" style="width:620px;height:390px;
+              margin-left:-25px;margin-top:-30px; position:absolute;">
+              <img src="3p CLOSE4.png" style="width:30px;position:relative; z-index:4; margin-top:15px; margin-left:520px;"></a>
+              </div>
+      </div>
+          <script type="text/javascript">
+                  $(document).ready(function() {
+
+                      var $panel = $(".popup_panel4");
+                      var $panelContents = $panel.find(".popup_contents4");
+                      $("#btn_popup_open4").on("click", function(e) {
+
+                          if ($panelContents.outerWidth() < $(document).width()) {
+                              $panelContents.css("margin-left", "-" + $panelContents.outerWidth() / 2 + "px");
+                          } else {
+                              $panelContents.css("left", "0px");
+                          }
+
+                          if ($panelContents.outerHeight() < $(document).height()) {
+                              $panelContents.css("margin-top", "-" + $panelContents.outerHeight() / 2 + "px");
+                          } else {
+                              $panelContents.css("top", "0px");
+                          }
+                          $panel.fadeIn();
+                      });
+
+                      $("#btn_popup_close4").on("click", popupClose4);
+
+                      $panel.find(".popup_bg4").on("click", popupClose4);
+                      function popupClose4(e) {
+                          $panel.fadeOut();
+                          e.preventDefault();
+                      }
+                  });
+              </script>
+        <div class="pop4" style="display: none; background-color: white; width: 570px; height: 350px;">
+        <img src="3p pop4.png"> </div>
+
+
+
+      <div class="img5">
+        <img src="2P_05.jpg">
+        <a href="javascript:void(0)" id="btn_popup_open5"><img src="2p open5.png" style="width:30px; z-index:1;position:absolute;margin-left:-60px;margin-top:350px;"></a>
+      </div>
+
+      <div class="popup_panel5">
+          <div class="popup_bg5"></div>
+             <div class="popup_contents5">
+              <a href="javascript:void(0)" id="btn_popup_close5"><img src="3p pop5.png" style="width:620px;height:390px;
+              margin-left:-25px;margin-top:-30px; position:absolute;">
+              <img src="3p CLOSE5.png" style="width:30px;position:relative; z-index:4; margin-top:15px; margin-left:520px;"></a>
+              </div>
+      </div>
+          <script type="text/javascript">
+                  $(document).ready(function() {
+
+                      var $panel = $(".popup_panel5");
+                      var $panelContents = $panel.find(".popup_contents5");
+                      $("#btn_popup_open5").on("click", function(e) {
+
+                          if ($panelContents.outerWidth() < $(document).width()) {
+                              $panelContents.css("margin-left", "-" + $panelContents.outerWidth() / 2 + "px");
+                          } else {
+                              $panelContents.css("left", "0px");
+                          }
+
+                          if ($panelContents.outerHeight() < $(document).height()) {
+                              $panelContents.css("margin-top", "-" + $panelContents.outerHeight() / 2 + "px");
+                          } else {
+                              $panelContents.css("top", "0px");
+                          }
+                          $panel.fadeIn();
+                      });
+
+                      $("#btn_popup_close5").on("click", popupClose5);
+
+                      $panel.find(".popup_bg5").on("click", popupClose5);
+                      function popupClose5(e) {
+                          $panel.fadeOut();
+                          e.preventDefault();
+                      }
+                  });
+              </script>
+        <div class="pop5" style="display: none; background-color: white; width: 570px; height: 350px;">
+        <img src="3p pop5.png"> </div>
+
+      </section>
+  	<aside class="aside"></aside>
+
+    <footer class="footer">
+      <ul>
+     <li > <a href="index.html">메인</a>
+      <li> <a href="2.html">스토리</a>
+      <li> <a href="3.html">사용되는 탈</a>
+      <li> <a href="4.html">탈 만들기</a>
+      <li> <a href="5.html">춤동작</a>
+    </ul>
+  <img src="bottombar.png">
+    </footer>
+
+
+
+</body>
+</html>
